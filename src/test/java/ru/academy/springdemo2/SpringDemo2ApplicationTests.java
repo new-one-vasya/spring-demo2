@@ -16,8 +16,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import ru.academy.springdemo2.dao.CatRepository;
 import ru.academy.springdemo2.model.Cat;
 
-import javax.xml.catalog.CatalogResolver;
-
 import java.util.stream.Stream;
 
 import static lombok.AccessLevel.PRIVATE;
@@ -59,6 +57,7 @@ public class SpringDemo2ApplicationTests {
                 .split("totalElements")[1]
                 .split(":")[1].trim()
                 .split(",")[0]));
+
   }
 
 }
